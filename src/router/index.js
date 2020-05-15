@@ -8,7 +8,27 @@ const routes = [
   {
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
+  },
+  {
+    path: "/todo-list",
+    name: "TodoList",
+    component: () => import("../views/TodoList.vue"),
+  },
+  {
+    path: "/tombola-study",
+    name: "TombolaStudy",
+    component: () => import("../views/TombolaStudy.vue"),
+  },
+  {
+    path: "/nutrisoft",
+    name: "NutriSoft",
+    component: () => import("../views/NutriSoft.vue"),
+  },
+  {
+    path: "/firebase",
+    name: "FireBase",
+    component: () => import("../views/FireBase.vue"),
   },
   {
     path: "/about",
@@ -17,14 +37,14 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/About.vue")
-  }
+      import(/* webpackChunkName: "about" */ "../views/About.vue"),
+  },
 ];
 
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
 });
 
 export default router;
