@@ -31,6 +31,11 @@ const routes = [
     component: () => import("../views/FireBase.vue"),
   },
   {
+    path: "/html-pdf",
+    name: "HtmlPdf",
+    component: () => import("../views/HtmlPdf.vue"),
+  },
+  {
     path: "/about",
     name: "About",
     // route level code-splitting

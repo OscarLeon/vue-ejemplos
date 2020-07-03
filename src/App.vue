@@ -14,6 +14,8 @@
       |
       <router-link class="go-firebase" to="/firebase">Firebase</router-link>
       |
+      <router-link class="go-html-pdf" to="/html-pdf">HTML & PDF</router-link>
+      |
       <router-link class="go-about" to="/about">Acerca de</router-link>
     </div>
     <router-view />
