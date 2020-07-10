@@ -13,7 +13,7 @@
       :pdf-quality="2"
       pdf-format="a4"
       pdf-orientation="landscape"
-      pdf-content-width="800px"
+      pdf-content-width="1200px"
       @progress="onProgress($event)"
       @hasStartedGeneration="hasStartedGeneration()"
       @hasGenerated="hasGenerated($event)"
